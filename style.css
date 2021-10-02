@@ -1,0 +1,203 @@
+                        * {
+                            margin: 0;
+                            box-sizing: border-box;
+                        }
+                        
+                        body {
+                            font-family: 'Roboto Condensed', sans-serif;
+                            padding: 20px 0;
+                            background: #373B44;
+                            /* fallback for old browsers */
+                            background: -webkit-linear-gradient(to right, #4286f4, #373B44);
+                            /* Chrome 10-25, Safari 5.1-6 */
+                            background: linear-gradient(to right, #4286f4, #373B44);
+                            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                        }
+                        
+                        .header {
+                            background: #0052D4;
+                            /* fallback for old browsers */
+                            background: -webkit-linear-gradient(to left, #6FB1FC, #4364F7, #0052D4);
+                            /* Chrome 10-25, Safari 5.1-6 */
+                            background: linear-gradient(to left, #6FB1FC, #4364F7, #0052D4);
+                            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                            height: 125px;
+                            position: fixed;
+                            width: 100%;
+                            top: 0;
+                            left: 0;
+                            z-index: 1000;
+                        }
+                        
+                        .nav {
+                            display: flex;
+                            justify-content: space-between;
+                            max-width: 992px;
+                            margin: 0 auto;
+                        }
+                        
+                        .nav-link {
+                            color: white;
+                            text-decoration: none;
+                        }
+                        
+                        .logo {
+                            font-size: 30px;
+                            font-weight: bold;
+                            padding: 20px 40px;
+                            line-height: 80px;
+                        }
+                        
+                        .nav-menu {
+                            display: flex;
+                            margin-right: 40px;
+                            list-style: none;
+                        }
+                        
+                        .nav-menu-item {
+                            font-size: 18px;
+                            margin: 0 10px;
+                            line-height: 120px;
+                            text-transform: uppercase;
+                            width: max-content;
+                        }
+                        
+                        .nav-menu-link {
+                            padding: 8px 12px;
+                            border-radius: 3px;
+                        }
+                        
+                        .nav-menu-link:hover,
+                        .nav-menu-link_active {
+                            background-color: #034574;
+                            transition: 0.5s;
+                            z-index: 700;
+                            position: relative;
+                        }
+                        /* TOGGLE */
+                        
+                        .nav-toggle {
+                            color: rgb(0, 0, 0);
+                            background: none;
+                            border: none;
+                            font-size: 30px;
+                            padding: 0 20px;
+                            line-height: 60px;
+                            cursor: pointer;
+                            display: none;
+                        }
+                        
+                        .imagen-logo {
+                            display: inline-block;
+                            width: 15%;
+                            height: 25%;
+                            position: relative;
+                        }
+                        
+                        h1 {
+                            color: darkorange
+                        }
+                        
+                        .float {
+                            position: fixed;
+                            width: 60px;
+                            height: 60px;
+                            bottom: 40px;
+                            right: 40px;
+                            background-color: #25d366;
+                            color: #FFF;
+                            border-radius: 50px;
+                            text-align: center;
+                            font-size: 30px;
+                            box-shadow: 2px 2px 3px #999;
+                            z-index: 100;
+                        }
+                        
+                        .float:hover {
+                            text-decoration: none;
+                            color: #25d366;
+                            background-color: #fff;
+                        }
+                        
+                        .my-float {
+                            margin-top: 16px;
+                        }
+                        /* MOBILE */
+                        
+                        @media (max-width: 768px) {
+                            body {
+                                padding-top: 70px;
+                            }
+                            .header {
+                                height: 120px;
+                            }
+                            .logo {
+                                font-size: 25px;
+                                padding: 15px 20px;
+                                line-height: 60px;
+                            }
+                            .nav-menu {
+                                flex-direction: column;
+                                align-items: center;
+                                margin: 0;
+                                background-color: #2c3e50;
+                                position: fixed;
+                                top: 120px;
+                                width: 100%;
+                                padding: 20px 0;
+                                height: calc(100% - 120px);
+                                overflow-y: auto;
+                                left: 100%;
+                                transition: left 0.3s;
+                            }
+                            .nav-menu-item {
+                                line-height: 70px;
+                            }
+                            .nav-menu-link:hover,
+                            .nav-menu-link_active {
+                                background: none;
+                                color: #83c5f7;
+                            }
+                            .nav-toggle {
+                                display: block;
+                            }
+                            .nav-menu_visible {
+                                left: 0;
+                            }
+                            .nav-toggle:focus:not(:focus-visible) {
+                                outline: none;
+                            }
+                        }
+                        
+                        .float {
+                            position: fixed;
+                            width: 60px;
+                            height: 60px;
+                            bottom: 40px;
+                            right: 40px;
+                            background-color: #25d366;
+                            color: #FFF;
+                            border-radius: 50px;
+                            text-align: center;
+                            font-size: 30px;
+                            box-shadow: 2px 2px 3px #999;
+                            z-index: 1500;
+                        }
+                        
+                        .float:hover {
+                            text-decoration: none;
+                            color: #25d366;
+                            background-color: #fff;
+                        }
+                        
+                        .my-float {
+                            margin-top: 16px;
+                        }
+                        
+                        footer {
+                            text-align: center;
+                            padding: 3px;
+                            background-color: coral;
+                            color: white;
+                            margin-top: 35px;
+                        }
